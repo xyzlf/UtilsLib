@@ -21,7 +21,7 @@ public class ScreenUtil {
     }
 
     /**
-     * 获取状态栏高度 注：activity inflate layout之后调用有效
+     * 获取状态栏高度
      */
     public static int getStatusBarHeight(Activity activity) {
         int statusBarHeight;
@@ -37,7 +37,12 @@ public class ScreenUtil {
         return statusBarHeight;
     }
 
-    public static int getStatusBarHeight2(Context context) {
+    /**
+     * 获取状态栏高度
+     * @param context 上下文
+     * @return int
+     */
+    private static int getStatusBarHeight2(Context context) {
         int statusBarHeight = -1;
         try {
             Class<?> cl = Class.forName("com.android.internal.R$dimen");

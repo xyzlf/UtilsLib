@@ -6,7 +6,11 @@ import java.util.Locale;
 
 public class TimeUtil {
 
-    //得到时间戳
+    /**
+     * 得到时间戳
+     * @param time System.currentTimeMillis()
+     * @return yyyy-MM-dd HH:mm
+     */
     public static String getTimeStr(long time) {
         SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault());
         if (time <= 0) {
@@ -15,16 +19,24 @@ public class TimeUtil {
         return mDateFormat.format(new Date(time));
     }
 
-    //得到时间戳
+    /**
+     * 得到时间戳
+     * @param time System.currentTimeMillis()
+     * @return yyyyMMddHHmmss
+     */
     public static String getTimeStrNoDivide(long time) {
-        SimpleDateFormat mDateFormat = new SimpleDateFormat("MMddHHmmss", Locale.getDefault());
+        SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyyMMddHHmmss", Locale.getDefault());
         if (time <= 0) {
             return null;
         }
         return mDateFormat.format(new Date(time));
     }
 
-    //得到时间戳
+    /**
+     * 得到时间戳
+     * @param time System.currentTimeMillis()
+     * @return yyyyMMdd
+     */
     public static String getTimeStrYmd(long time) {
         SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyyMMdd", Locale.getDefault());
         if (time <= 0) {
@@ -32,12 +44,4 @@ public class TimeUtil {
         }
         return mDateFormat.format(new Date(time));
     }
-
-    public static String getDateFormat(long timeMillis) {
-        if (timeMillis <= 0)
-            return "";
-        SimpleDateFormat sf = new SimpleDateFormat("MM/dd/yyyy", Locale.getDefault());
-        return sf.format(timeMillis);
-    }
-
 }

@@ -1,7 +1,6 @@
 package com.xyzlf.utils.lib;
 
 import android.content.Context;
-import android.support.annotation.IdRes;
 import android.text.TextUtils;
 import android.widget.Toast;
 
@@ -16,7 +15,7 @@ public class ToastUtil {
      * @param resId 资源id
      * @param isShort isShort
      */
-    public static void showToast(Context context, @IdRes int resId, boolean isShort) {
+    public static void showToast(Context context, int resId, boolean isShort) {
         if (null == context) {
             return;
         }
