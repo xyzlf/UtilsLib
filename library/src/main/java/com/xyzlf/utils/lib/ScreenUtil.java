@@ -10,11 +10,23 @@ import java.lang.reflect.Field;
 
 public class ScreenUtil {
 
+    /**
+     * 获取屏幕宽
+     *
+     * @param context
+     * @return
+     */
     public static int getScreenWidth(Context context) {
         DisplayMetrics dm = context.getResources().getDisplayMetrics();
         return dm.widthPixels;
     }
 
+    /**
+     * 获取屏幕高
+     *
+     * @param context
+     * @return
+     */
     public static int getScreenHeight(Context context) {
         DisplayMetrics dm = context.getResources().getDisplayMetrics();
         return dm.heightPixels;
@@ -39,6 +51,7 @@ public class ScreenUtil {
 
     /**
      * 获取状态栏高度
+     *
      * @param context 上下文
      * @return int
      */
@@ -55,14 +68,6 @@ public class ScreenUtil {
             e.printStackTrace();
         }
         return statusBarHeight;
-    }
-
-    /**
-     * dip 转 px
-     */
-    public static int dp2px(Context context, float dpValue) {
-        final float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (dpValue * scale + 0.5f);
     }
 
 }

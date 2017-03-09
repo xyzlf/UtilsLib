@@ -41,6 +41,7 @@ public class PatternUtil {
 
     /**
      * 颜色是否合法
+     *
      * @param colorStr color string
      * @return boolean
      */
@@ -71,6 +72,7 @@ public class PatternUtil {
 
     /**
      * 邮箱判断正则表达式
+     *
      * @param email
      * @return
      */
