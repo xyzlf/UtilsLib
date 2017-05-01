@@ -3,7 +3,7 @@ package com.xyzlf.utils.lib;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.v4.util.ArrayMap;
+import android.util.ArrayMap;
 
 public class FontUitls {
 

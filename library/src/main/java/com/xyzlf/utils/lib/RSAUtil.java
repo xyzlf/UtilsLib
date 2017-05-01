@@ -58,14 +58,14 @@ public class RSAUtil {
                     .getResources().getAssets().open(keyFileName));
             BufferedReader bufReader = new BufferedReader(inputReader);
             String line;
-            String Result = "";
+            String result = "";
             while ((line = bufReader.readLine()) != null) {
                 if (line.charAt(0) == '-') {
                     continue;
                 }
-                Result += line;
+                result += line;
             }
-            return Result;
+            return result;
         } catch (Exception e) {
             e.printStackTrace();
             return null;

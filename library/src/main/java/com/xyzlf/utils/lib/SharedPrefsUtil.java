@@ -159,24 +159,4 @@ public class SharedPrefsUtil {
         return false;
     }
 
-    protected static void saveJson(Context context, String key, Object data) {
-        if (data != null) {
-            String json = GsonUtils.toJson(data, false);
-            setStringPreference(context, key, json);
-        } else {
-            String json = GsonUtils.toJson("", false);
-            setStringPreference(context, key, json);
-        }
-    }
-
-    protected static final <V> V getJson(Context context, String key, Class<V> type) {
-        try {
-            String json = getStringPreference(context, key);
-            return GsonUtils.fromJson(json, type);
-        } catch (Exception e) {
-            e.printStackTrace();
-            saveJson(context, key, "");
-            return null;
-        }
-    }
 }
