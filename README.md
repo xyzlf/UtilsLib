@@ -5,15 +5,18 @@
 
 目前具有的工具类清单:
 	
-	DimenUtil.java
-	FontUitls.java
-	GsonUtils.java
-	PatternUtil.java
-	RSAUtil.java
-	ScreenUtil.java
-	SharedPrefsUtil.java
-	TimeUtil.java
-	ToastUtil.java
+	AppInfoUtil
+    CommonUtils
+    DeviceUtils
+    DimenUtil
+    FontUitls
+    PatternUtil
+    ReflectUtil
+    RSAUtil
+    ScreenUtil
+    SharedPrefsUtil
+    TimeUtil
+    ToastUtil
 
 一点点积累，持续更新...
 
