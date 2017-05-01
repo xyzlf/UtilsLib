@@ -50,7 +50,7 @@ public class RSAUtil {
     }
 
     /**
-     * 从assets文件中获取公钥
+     * keyFile from assets dir
      */
     private static String getPublicKeyFromAssets(Context context, String keyFileName) {
         try {

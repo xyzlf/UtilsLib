@@ -64,7 +64,7 @@ public class FileUtil {
     }
 
     /**
-     * SD卡是否挂载
+     * SD Card Mounted
      * @return booolean
      */
     public static boolean isSDCardMounted() {

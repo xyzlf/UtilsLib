@@ -11,9 +11,7 @@ import java.lang.reflect.Field;
 public class ScreenUtil {
 
     /**
-     * 获取屏幕宽
-     *
-     * @param context
+     * @param context context
      * @return
      */
     public static int getScreenWidth(Context context) {
@@ -22,9 +20,7 @@ public class ScreenUtil {
     }
 
     /**
-     * 获取屏幕高
-     *
-     * @param context
+     * @param context context
      * @return
      */
     public static int getScreenHeight(Context context) {
@@ -32,9 +28,6 @@ public class ScreenUtil {
         return dm.heightPixels;
     }
 
-    /**
-     * 获取状态栏高度
-     */
     public static int getStatusBarHeight(Activity activity) {
         int statusBarHeight;
         Rect rectgle = new Rect();
@@ -50,9 +43,7 @@ public class ScreenUtil {
     }
 
     /**
-     * 获取状态栏高度
-     *
-     * @param context 上下文
+     * @param context context
      * @return int
      */
     private static int getStatusBarHeight2(Context context) {

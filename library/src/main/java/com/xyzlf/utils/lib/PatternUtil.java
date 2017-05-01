@@ -14,13 +14,12 @@ import java.util.regex.Pattern;
 public class PatternUtil {
 
     /**
-     * Number正则表达式 整数或者小数
+     * Number
      */
     public static final String PATTERN_NUMERIC = "^[0-9]+\\.{0,1}[0-9]{0,8}$";
 
     /**
-     * 字符串是否是数字 整数或者小数最多8位
-     *
+     * digit
      * @param str numeric string
      * @return boolean
      */
@@ -40,8 +39,7 @@ public class PatternUtil {
     public static final String PATTERN_COLOR2 = "^#[0-9a-fA-F]{8}$";
 
     /**
-     * 颜色是否合法
-     *
+     * color
      * @param colorStr color string
      * @return boolean
      */
@@ -71,7 +69,7 @@ public class PatternUtil {
     public static final String PATTERN_EMAIL = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
 
     /**
-     * 邮箱判断正则表达式
+     * email
      *
      * @param email
      * @return

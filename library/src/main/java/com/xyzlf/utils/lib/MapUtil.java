@@ -17,9 +17,6 @@ public class MapUtil {
         return "";
     }
 
-    /**
-     * 取Map<>中的keys值
-     */
     public static List<String> getKeysForMap(Map<String, String> map) {
         if (map == null)
             return null;

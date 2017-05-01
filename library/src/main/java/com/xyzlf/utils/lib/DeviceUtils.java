@@ -34,21 +34,24 @@ public class DeviceUtils {
     }
 
     /**
-     * >= Android 2.3
+     * Android 2.3
+     * @return boolean
      */
     public static boolean isGingerbread() {
         return ANDROID_SDK_VERSION >= 9;
     }
 
     /**
-     * >= Android 4.4
+     * Android 4.4
+     * @return boolean
      */
     public static boolean isKitKat() {
         return ANDROID_SDK_VERSION >= 19;
     }
 
     /**
-     * >= Android 4.0
+     * Android 4.0
+     * @return boolean
      */
     public static boolean isIceCreamSandwich() {
         return ANDROID_SDK_VERSION >= 14;
@@ -84,6 +87,7 @@ public class DeviceUtils {
 
     /**
      * 小米2
+     * @return boolean
      */
     public static boolean isMi2() {
         return "mi 2".equalsIgnoreCase(MODEL);
@@ -114,7 +118,8 @@ public class DeviceUtils {
     }
 
     /**
-     * 华为 荣耀6 plus
+     * Hua wei Honor 6 plus
+     * @return boolean
      */
     public static boolean isHuaweiHonor6Plus() {
         return FINGERPRINT.toLowerCase().contains("huawei") && MODEL.toLowerCase().contains("pe-ul00");
@@ -279,6 +284,7 @@ public class DeviceUtils {
 
     /**
      * 判断是否 Android 3.0 以下
+     * @return boolean
      */
     public static boolean isApiLvlLess11() {
         return ANDROID_SDK_VERSION < 11;
@@ -287,7 +293,7 @@ public class DeviceUtils {
     /**
      * 判断是否 Android 4.1
      *
-     * @return
+     * @return boolean
      */
     public static boolean isApiLevel16() {
         return ANDROID_SDK_VERSION >= 16;
@@ -334,7 +340,7 @@ public class DeviceUtils {
     /**
      * 判断华为Emotion UI-1.6
      *
-     * @return
+     * @return boolean
      */
     public static boolean isEmotionUI16() {
         return "EmotionUI_1.6".equalsIgnoreCase(getHuaweiEmotionVersion());
@@ -343,7 +349,7 @@ public class DeviceUtils {
     /**
      * 判断华为Emotion UI-2.3
      *
-     * @return
+     * @return boolean
      */
     public static boolean isEmotionUI23() {
         return "EmotionUI_2.3".equalsIgnoreCase(getHuaweiEmotionVersion()) || getDisplayForEmotionUI().contains("emui2.3");
@@ -359,6 +365,7 @@ public class DeviceUtils {
 
     /**
      * 获取华为版本信息
+     * @return String
      */
     public static String getHuaweiEmotionVersion() {
         String emotionVersionName = "";
@@ -389,9 +396,9 @@ public class DeviceUtils {
     }
 
     /**
-     * 判断是否是魅族手机，包括了目前魅族手机的所有model号
+     * Meizu model
      *
-     * @return
+     * @return boolean
      */
     public static boolean isMeizuModel() {
         if ("meizu_m9".equalsIgnoreCase(Build.MODEL) || "m9".equalsIgnoreCase(Build.MODEL) || "meizu mx".equalsIgnoreCase(Build.MODEL) || "mx".equalsIgnoreCase(Build.MODEL)
@@ -405,6 +412,7 @@ public class DeviceUtils {
 
     /**
      * Lenovo z90-7
+     * @return boolean
      */
     public static boolean isLenovoZ90Minus7() {
         return "lenovo z90-7".equals(MODEL);
@@ -412,6 +420,7 @@ public class DeviceUtils {
 
     /**
      * 魅族Note 5.1
+     * @return boolean
      */
     public static boolean isMZ5Point1() {
         return ANDROID_SDK_VERSION == 22 && PRODUCT.equals("m2 note") && FINGERPRINT.contains("m2note:5.1");
@@ -419,6 +428,7 @@ public class DeviceUtils {
 
     /**
      * 乐视超级手机1 pro
+     * @return boolean
      */
     public static boolean isLeTVPro1() {
         return ANDROID_SDK_VERSION == 21 && PRODUCT.equals("乐视超级手机1 pro");
@@ -426,6 +436,7 @@ public class DeviceUtils {
 
     /**
      * 魅族1 Note 1
+     * @return boolean
      */
     public static boolean isMZ1Note22() {
         return Build.VERSION.SDK_INT == 22
@@ -435,6 +446,7 @@ public class DeviceUtils {
 
     /**
      * 三星 N9006
+     * @return boolean
      */
     public static boolean isSamSungN9006() {
         return Build.VERSION.SDK_INT == 21
@@ -447,7 +459,8 @@ public class DeviceUtils {
     }
 
     /**
-     * 奇酷旗舰版
+     * Qiku QiJianBan
+     * @return boolean
      */
     public static boolean isQikuQiJian() {
         return PRODUCT.equalsIgnoreCase("cp8692")
@@ -488,6 +501,7 @@ public class DeviceUtils {
 
     /**
      * 输入设备信息
+     * @param c context
      */
     public static void printDisplayInfo(Context c) {
         StringBuilder sb = new StringBuilder();

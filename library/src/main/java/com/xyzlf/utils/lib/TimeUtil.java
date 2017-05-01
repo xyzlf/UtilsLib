@@ -7,8 +7,6 @@ import java.util.Locale;
 public class TimeUtil {
 
     /**
-     * 得到时间戳
-     *
      * @param time System.currentTimeMillis()
      * @return yyyy-MM-dd HH:mm
      */
@@ -21,8 +19,6 @@ public class TimeUtil {
     }
 
     /**
-     * 得到时间戳
-     *
      * @param time System.currentTimeMillis()
      * @return yyyyMMddHHmmss
      */
@@ -35,8 +31,6 @@ public class TimeUtil {
     }
 
     /**
-     * 得到时间戳
-     *
      * @param time System.currentTimeMillis()
      * @return yyyyMMdd
      */
