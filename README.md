@@ -3,21 +3,6 @@
 
 # 说明
 
-目前具有的工具类清单:
-	
-	AppInfoUtil
-    CommonUtils
-    DeviceUtils
-    DimenUtil
-    FontUitls
-    PatternUtil
-    ReflectUtil
-    RSAUtil
-    ScreenUtil
-    SharedPrefsUtil
-    TimeUtil
-    ToastUtil
-
 一点点积累，持续更新...
 
 # 关于我
